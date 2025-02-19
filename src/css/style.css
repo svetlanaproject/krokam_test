@@ -1,0 +1,381 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--light-color: #FFFFFF;
+	--dark-color: #000000;
+	--background-color: #EDEEF2;
+	
+}
+
+html {
+	font-family: 'Rubik', sans-serif;
+}
+
+main {
+	position: relative;
+}
+
+.vector {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+} 
+
+.vectorn {
+	position: absolute;
+	z-index: -1;
+	top: 1625px;
+}
+
+.vectornk {
+	position: absolute;
+	z-index: -1;
+	top: 2635px;
+}
+
+.container {
+	width: 1128px;
+	margin: 0 auto;
+}
+/* Стилизация шапки */
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 74px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background-color: var(--background-color);
+}
+
+nav .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 117;
+	height: 24;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+}
+
+ul li {
+	margin-right: 30px;
+}
+
+a { 
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21.33px;
+	letter-spacing: 0;
+	color: var(--dark-color);
+	text-decoration: none;
+}
+
+.lang {
+	width: 24;
+	height: 24;
+}
+
+/* Стилизация Personal audio guides and navigators for localities and surroundings */
+.guide {
+	margin-top: 25px;
+}
+
+.info {
+	background: url("../img/main.png") center center / cover no-repeat;
+	height: 650px;
+	border-radius: 20px;
+	padding: 429px 96px 60px 96px;
+}
+
+.wrapper {
+	width: 936px;
+	height: 161px;
+	border-radius: 20px;
+	background-color: hsla(0, 0%, 100%, 0.2);
+	padding: 28px 51px 27px 51px;
+}
+
+.title {
+	font-weight: 600;
+	font-size: 45px;
+	line-height: 53.33px;
+	letter-spacing: 0;
+	text-align: center;
+	color: var(--light-color);
+}
+
+/* Стилизация About the project */
+.about {
+	margin-top: 50px;
+}
+
+.subtitle {
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 42.66px;
+	letter-spacing: 0;
+	margin-bottom: 25px;
+}
+
+.about__text {
+	margin-bottom: 15px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21.6px;
+	letter-spacing: 0%;
+}
+
+.about__text a {
+	text-decoration: underline;
+}
+
+.btn {
+	display: block;
+	margin: 0 auto;
+	min-width: 118px;
+	min-height: 39px;
+	margin-top: 25px;
+	background-color: #396F87;
+	padding: 10px 16px;
+	border-radius: 10px;
+	color: var(--light-color);
+	text-align: center;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 18.96px;
+	letter-spacing: 0;
+	cursor: pointer;
+	border: none;
+}
+
+/* Стилизация video */
+.video {
+	margin-top: 34px;
+}
+
+.video__img {
+	background: url("../img/video.png") center center / cover no-repeat;
+	height: 608px;
+	border-radius: 30px;
+}
+
+/* Стилизация About the project */
+.projects {
+	margin-top: 50px;
+}
+
+.projects__grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	column-gap: 24px;
+	row-gap: 50px;
+	margin-top: 59px;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 360px;
+	height: 448px;
+	border-radius: 20px;
+	border: 1px solid #DCDCDC;
+	background-color: #FFF;
+}
+
+.item__picture {
+	height: 264px;
+	border-radius: 20px;
+	margin-top: 35px;
+	width: 264px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	overflow: hidden;
+}
+
+.item__picture img {
+	height: 100%;
+}
+
+.projects__descr {
+	display: flex;
+	align-items: center;
+	width: 360px;
+	height: 115px;
+	border-radius: 20px;
+	background-color: #00000033;
+	color: #FFFFFF;
+	font-family: Rubik;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 21.33px;
+	letter-spacing: 0;
+	text-align: left;
+	padding: 0 20px;
+}
+
+/* Стилизация  contacts*/
+.contacts {
+	margin-top: 180px;
+}
+
+.contacts__subtitle {
+	margin-bottom: 20px;
+}
+
+.form {
+	height: 482px;
+	background-color: var(--background-color);
+	border-radius: 20px;
+	padding: 30px 30px 49px 30px;
+}
+
+.contacts__info {
+	margin-top: 30px;
+}
+
+.general__info {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	gap: 24px;
+}
+
+.general__info .contacts__name,
+.general__info .contacts__email {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.contacts__mes {	
+	display: flex;
+	margin-top: 30px;
+	flex-direction: column;
+	width: 100%;
+}
+
+.contacts__name label,
+.contacts__email label,
+.contacts__mes label {
+	margin-bottom: 8px;
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20.8px;
+	letter-spacing: 0;
+}
+
+.contacts__name input,
+.contacts__email input,
+.contacts__mes textarea {
+	height: 41px;
+	border-radius: 10px;
+	border: 1px solid #0E152E;
+	padding-left: 10px;
+}
+
+.contacts__mes textarea {
+	padding-top: 10px;
+}
+
+.robot {
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+	font-family: Roboto;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18.2px;
+	letter-spacing: 0;
+}
+
+.robot input[type="checkbox"] {
+	margin-right: 10px;
+	width: 20px;
+	height: 20px;
+	border: 1.5px solid var(--dark-color);
+}
+
+.form-action input[type="submit"] {
+	margin-top: 30px;
+}
+
+/* Стилизация  footer*/
+.footer {
+	margin-top: 72px;
+	padding-top: 30px;
+	width: 100vw;
+	height: 332px;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	background-color: var(--background-color);
+}
+
+
+.big {
+	width: 168px;
+	height: 34.35px;
+}
+
+.footer__grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, auto);
+	margin-top: 54.65px;
+	row-gap: 10px;
+}
+
+.footer__grid>*:nth-child(3n+2) {
+	padding-left: 180.5px;
+}
+
+.footer__grid>*:nth-child(3n) {
+	padding-left: 289px;
+}
+
+.footer__grid a {
+	font-family: Roboto;
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: 0;
+}
+
+.footer__social {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	gap: 24px;
+}
+
+.footer__social a {
+	font-size: initial;
+	line-height: 0;
+}
+
+.footer__mail a {
+	text-decoration: underline;
+}
+
+
+
+
+
+
