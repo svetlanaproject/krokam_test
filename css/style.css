@@ -15,6 +15,10 @@ html {
 	font-family: 'Rubik', sans-serif;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 main {
 	position: relative;
 }
@@ -35,7 +39,7 @@ main {
 .vectornk {
 	position: absolute;
 	z-index: -1;
-	top: 2635px;
+	top: 2900px;
 }
 
 .container {
