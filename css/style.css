@@ -170,10 +170,12 @@ a {
 	margin-top: 34px;
 }
 
-.video__img {
-	background: url("../img/video.png") center center / cover no-repeat;
-	height: 608px;
+.video__img img{
+	display: block;
+	margin: 0 auto;
 	border-radius: 30px;
+	width: 1128px;
+	height: 608px;
 }
 
 /* Стилизация About the project */
